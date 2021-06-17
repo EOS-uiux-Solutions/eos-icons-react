@@ -1,0 +1,12 @@
+.git
+.vscode
+
+node_modules
+
+/*src
+es
+lib
+svg
+
+yarn.lock
+package-lock.json
