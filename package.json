@@ -4,7 +4,7 @@
   "description": "Eos-Icons React npm package",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "fetch": "gulp --require ts-node/register/transpile-only"
   },
   "repository": {
     "type": "git",
@@ -17,13 +17,18 @@
   },
   "homepage": "https://github.com/EOS-uiux-Solutions/eos-icons-react#readme",
   "devDependencies": {
+    "@types/gulp": "^4.0.8",
     "@typescript-eslint/eslint-plugin": "^4.27.0",
     "@typescript-eslint/parser": "^4.27.0",
+    "del": "^6.0.0",
+    "eos-icons": "^5.1.0",
     "eslint": "^7.28.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
+    "gulp": "^4.0.2",
+    "ts-node": "^10.0.0",
     "typescript": "^4.3.2"
   },
   "peerDependencies": {
