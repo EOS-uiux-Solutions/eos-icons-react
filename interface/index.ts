@@ -6,4 +6,4 @@ export interface CopyCreatorOptions {
 export interface iconGenerateScript {
     type: string;
     from: string;
-  }
+}
