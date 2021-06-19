@@ -10,6 +10,8 @@ async function generateIconComponents({type,from}: iconGenerateScript) {
   const iconNames = await fs.promises.readdir(from);
   for(const iconName of iconNames) {
     const fileName = iconName.slice(0, iconName.length - 4).concat(type.charAt(0).toUpperCase() + type.slice(1));
+
+    // fetching Data of the required SVG file
     fs.readFile(path.resolve(__dirname,`../svg/${type}/${iconName}`),'utf8', async function (err,data) {
       if(err) {
         console.error(err);

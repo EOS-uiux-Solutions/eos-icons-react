@@ -33,6 +33,11 @@ export default series(
         copy({
             from: ['node_modules/eos-icons/svg-outlined/material/*.svg'],
             toDir: 'svg/outlined'
-        })
+        }),
+
+        copy({
+            from: ['template/index.ts'],
+            toDir: 'src/'
+        }),
     )
 );
