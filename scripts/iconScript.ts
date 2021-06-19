@@ -44,7 +44,7 @@ async function generateIconComponents({type,from}: iconGenerateScript) {
             console.error(err)
           }
       })
-
+      
       // creates a .tsx index file at src/icon/ containing exports of all the icons
       fs.writeFile(
         path.resolve(__dirname, `../src/icon/index.tsx`),
