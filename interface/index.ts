@@ -3,7 +3,7 @@ export interface CopyCreatorOptions {
     toDir: string;
 }
 
-export interface iconGenerateScript {
+export interface IconGenerateScript {
     type: string;
     from: string;
 }

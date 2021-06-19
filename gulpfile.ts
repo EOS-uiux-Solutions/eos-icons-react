@@ -39,5 +39,10 @@ export default series(
             from: ['template/index.ts'],
             toDir: 'src/'
         }),
+
+        copy({
+            from: ['utils/helper.ts'],
+            toDir: 'src/'
+        })
     )
 );

@@ -1,11 +1,11 @@
 import * as path from 'path';
 import * as fs from 'fs';
 
-import { iconGenerateScript } from '../interface/index';
+import { IconGenerateScript } from '../interface/index';
 import componentTemplate from '../template/iconComponent';
 import iconIndexTemplate from '../template/iconIndex';
 
-async function generateIconComponents({type,from}: iconGenerateScript) {
+async function generateIconComponents({type,from}: IconGenerateScript) {
 
   const iconNames = await fs.promises.readdir(from);
   for(const iconName of iconNames) {
@@ -26,7 +26,7 @@ async function generateIconComponents({type,from}: iconGenerateScript) {
         }
       }
 
-      const propString = "svg transform={`rotate(${rotate})`} fill={color} width={width} height={height}"
+      const propString = "svg transform={`rotate(${rotate})`} fill={color} width={size} height={size}"
       data = data.replace('svg',propString);
 
       const render = componentTemplate({fileName,data});
