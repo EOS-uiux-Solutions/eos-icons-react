@@ -10,12 +10,37 @@ function componentTemplate ({fileName,data}:TemplateProps) {
 import * as React from 'react';
 import { IconProps } from '../helper';
 
-function Eos${fileName}({size = 36, color = "black", rotate = 0}: IconProps) {
+function Eos${fileName}({size = "m", color = "black", rotate = 0}: IconProps) {
+    switch (size) {
+        case "xs":
+            size = 4
+            break
+        case "s":
+            size = 8
+            break
+        case "base":
+            size = 14
+            break
+        case "m":
+            size = 18
+            break
+        case "l":
+            size = 24
+            break
+        case "xl":
+            size = 32
+            break
+        case "xxl":
+            size = 48
+            break
+        case "xxxl":
+            size = 64
+            break
+    }
 return (
     ${data}
     );
 };
-
 
 export default Eos${fileName};
 `;
