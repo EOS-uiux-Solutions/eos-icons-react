@@ -7,3 +7,8 @@ export interface IconGenerateScript {
     type: string;
     from: string;
 }
+
+export interface TemplateProps {
+    fileName: string;
+    data: string;
+}

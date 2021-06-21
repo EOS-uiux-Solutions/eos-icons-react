@@ -1,5 +1,9 @@
 export interface IconProps {
     size?: string | number,
     color?: string,
-    rotate?: number
+    rotate?: string | number
+}
+
+export interface ValueMap {
+    [index: string]: string | number,
 }
