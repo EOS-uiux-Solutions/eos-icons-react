@@ -11,31 +11,19 @@ import * as React from 'react';
 import { IconProps } from '../helper';
 
 function Eos${fileName}({size = "m", color = "black", rotate = 0}: IconProps) {
-    switch (size) {
-        case "xs":
-            size = 4
-            break
-        case "s":
-            size = 8
-            break
-        case "base":
-            size = 14
-            break
-        case "m":
-            size = 18
-            break
-        case "l":
-            size = 24
-            break
-        case "xl":
-            size = 32
-            break
-        case "xxl":
-            size = 48
-            break
-        case "xxxl":
-            size = 64
-            break
+    const valuesMap: any = {
+        xs: 4,
+        s: 8,
+        base: 14,
+        m: 18,
+        l: 24,
+        xl: 32,
+        xxl: 48,
+        xxxl: 64,
+    }
+    let sizes: any = ["xs","s","base","m","l","xl","xxl","xxxl"]
+    if(sizes.includes(size)) {
+        size = valuesMap[size]
     }
 return (
     ${data}
