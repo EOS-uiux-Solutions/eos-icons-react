@@ -4,7 +4,12 @@
   "description": "Eos-Icons React npm package",
   "main": "index.js",
   "scripts": {
-    "fetch": "gulp --require ts-node/register/transpile-only"
+    "fetch": "gulp --require ts-node/register/transpile-only",
+    "script:filled": "TS_NODE_PROJECT=scripts/tsconfig.json node -r ts-node/register scripts/index.ts --target=filled",
+    "script:outlined": "TS_NODE_PROJECT=scripts/tsconfig.json node -r ts-node/register scripts/index.ts --target=outlined",
+    "script:animated": "TS_NODE_PROJECT=scripts/tsconfig.json node -r ts-node/register scripts/index.ts --target=animated",
+    "icon": "mkdir -p src/icon && npm run script:filled && npm run script:animated && npm run script:outlined",
+    "generate": "npm run fetch && npm run icon"
   },
   "repository": {
     "type": "git",
