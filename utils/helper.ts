@@ -1,7 +1,9 @@
 export interface IconProps {
     size?: string | number,
     color?: string,
-    rotate?: string | number
+    rotate?: string | number,
+    horizontalFlip?: boolean,
+    verticalFlip?: boolean
 }
 
 export interface ValueMap {
@@ -20,4 +22,9 @@ export const valuesMap: ValueMap = {
   xl: 32,
   xxl: 48,
   xxxl: 64
+}
+
+export interface FlipProps {
+  horizontalFlip: boolean;
+  verticalFlip: boolean;
 }
