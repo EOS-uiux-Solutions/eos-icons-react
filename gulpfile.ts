@@ -43,6 +43,11 @@ export default series(
     copy({
       from: ['utils/helper.ts'],
       toDir: 'src/'
+    }),
+
+    copy({
+      from: ['utils/flipFunction.ts'],
+      toDir: 'src/'
     })
   )
 )
