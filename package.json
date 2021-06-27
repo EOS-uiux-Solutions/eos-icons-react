@@ -13,7 +13,8 @@
     "build:lib": "tsc --project tsconfig.build.json --module commonjs --outDir lib",
     "build": "npm run build:es && npm run build:lib",
     "generate": "npm run fetch && npm run icon && npm run build",
-    "test": "jest"
+    "test": "jest",
+    "test:update": "jest -u"
   },
   "repository": {
     "type": "git",

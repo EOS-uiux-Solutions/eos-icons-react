@@ -4,7 +4,7 @@ exports[`React Filled SVG Component Prop Test 1`] = `
 <svg
   fill="blue"
   height={64}
-  transform="rotate(90) translate(24, 24) scale(-1, -1)"
+  transform="rotate(90)"
   viewBox="0 0 24 24"
   width={64}
   xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +19,7 @@ exports[`React Filled SVG Component test 1`] = `
 <svg
   fill="black"
   height={18}
-  transform="rotate(0) translate(0, 0) scale(1, 1)"
+  transform="rotate(0)"
   viewBox="0 0 24 24"
   width={18}
   xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ exports[`React Outlined SVG Component Prop Test 1`] = `
 <svg
   fill="blue"
   height={64}
-  transform="rotate(90) translate(24, 24) scale(-1, -1)"
+  transform="rotate(90)"
   viewBox="0 0 24 24"
   width={64}
   xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +55,7 @@ exports[`React Outlined SVG Component test 1`] = `
 <svg
   fill="black"
   height={18}
-  transform="rotate(0) translate(0, 0) scale(1, 1)"
+  transform="rotate(0)"
   viewBox="0 0 24 24"
   width={18}
   xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,7 @@ exports[`React animated SVG Component Prop Test 1`] = `
 <svg
   fill="blue"
   height={64}
-  transform="rotate(90) translate(24, 24) scale(-1, -1)"
+  transform="rotate(90)"
   viewBox="0 0 24 24"
   width={64}
   xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +104,7 @@ exports[`React animated SVG Component test 1`] = `
 <svg
   fill="black"
   height={18}
-  transform="rotate(0) translate(0, 0) scale(1, 1)"
+  transform="rotate(0)"
   viewBox="0 0 24 24"
   width={18}
   xmlns="http://www.w3.org/2000/svg"
