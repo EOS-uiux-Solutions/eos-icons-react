@@ -13,7 +13,7 @@
     "build:lib": "tsc --project tsconfig.build.json --module commonjs --outDir lib",
     "build": "npm run build:es && npm run build:lib",
     "generate": "npm run fetch && npm run icon && npm run build",
-    "test": "jest",
+    "test": "jest --env=jsdom",
     "test:update": "jest -u"
   },
   "repository": {
@@ -46,7 +46,9 @@
     "eslint-plugin-promise": "^5.1.0",
     "gulp": "^4.0.2",
     "jest": "^27.0.5",
+    "jest-dom": "^4.0.0",
     "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-test-renderer": "^17.0.2",
     "ts-jest": "^27.0.3",
     "ts-node": "^10.0.0",
@@ -54,5 +56,9 @@
   },
   "peerDependencies": {
     "react": "^17.0.2"
+  },
+  "dependencies": {
+    "-": "^0.0.1",
+    "D": "^1.0.0"
   }
 }
