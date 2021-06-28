@@ -7,5 +7,7 @@ node_modules
 es
 lib
 svg
+tests
+
 
 yarn.lock

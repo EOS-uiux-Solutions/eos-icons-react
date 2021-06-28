@@ -12,7 +12,9 @@
     "build:es": "tsc --project tsconfig.build.json --module esnext --outDir es",
     "build:lib": "tsc --project tsconfig.build.json --module commonjs --outDir lib",
     "build": "npm run build:es && npm run build:lib",
-    "generate": "npm run fetch && npm run icon && npm run build"
+    "generate": "npm run fetch && npm run icon && npm run build",
+    "test": "jest --env=jsdom",
+    "test:update": "jest -u"
   },
   "repository": {
     "type": "git",
@@ -25,10 +27,16 @@
   },
   "homepage": "https://github.com/EOS-uiux-Solutions/eos-icons-react#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
     "@types/gulp": "^4.0.8",
+    "@types/jest": "^26.0.23",
     "@types/react": "^17.0.11",
     "@typescript-eslint/eslint-plugin": "^4.28.0",
     "@typescript-eslint/parser": "^4.28.0",
+    "babel-jest": "^27.0.5",
     "del": "^6.0.0",
     "eos-icons": "^5.1.0",
     "eslint": "^7.29.0",
@@ -37,6 +45,12 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "gulp": "^4.0.2",
+    "jest": "^27.0.5",
+    "jest-dom": "^4.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-test-renderer": "^17.0.2",
+    "ts-jest": "^27.0.3",
     "ts-node": "^10.0.0",
     "typescript": "^4.3.2"
   },

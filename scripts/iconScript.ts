@@ -26,7 +26,7 @@ async function generateIconComponents ({ type, from }: IconGenerateScript) {
       }
 
       // eslint-disable-next-line no-template-curly-in-string
-      const propString = 'svg transform={`rotate(${rotate}) translate(${translateX}, ${translateY}) scale(${scaleX}, ${scaleY})`} fill={color} width={size} height={size}'
+      const propString = 'svg data-testid="eos-svg-component" transform={`rotate(${rotate}) translate(${translateX}, ${translateY}) scale(${scaleX}, ${scaleY})`} fill={color} width={size} height={size}'
       data = data.replace('svg', propString)
 
       const render = componentTemplate({ fileName, data })
