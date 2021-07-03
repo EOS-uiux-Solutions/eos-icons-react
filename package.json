@@ -2,7 +2,8 @@
   "name": "eos-icons-react",
   "version": "1.0.0",
   "description": "Eos-Icons React npm package",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
   "scripts": {
     "fetch": "gulp --require ts-node/register/transpile-only",
     "script:filled": "TS_NODE_PROJECT=scripts/tsconfig.json node -r ts-node/register scripts/index.ts --target=filled",
@@ -13,8 +14,7 @@
     "build:lib": "tsc --project tsconfig.build.json --module commonjs --outDir lib",
     "build": "npm run build:es && npm run build:lib",
     "generate": "npm run fetch && npm run icon && npm run build",
-    "test": "jest --env=jsdom",
-    "test:update": "jest -u"
+    "test": "jest --env=jsdom"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,8 @@
   "devDependencies": {
     "@babel/preset-env": "^7.14.7",
     "@babel/preset-react": "^7.14.5",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.2.3",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@types/gulp": "^4.0.8",
@@ -50,11 +52,22 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-test-renderer": "^17.0.2",
+    "semantic-release": "^17.4.4",
     "ts-jest": "^27.0.3",
     "ts-node": "^10.0.0",
     "typescript": "^4.3.2"
   },
   "peerDependencies": {
     "react": "^17.0.2"
-  }
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "files": [
+    "src",
+    "es",
+    "lib"
+  ]
 }

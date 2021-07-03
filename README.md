@@ -1,6 +1,31 @@
 # eos-icons-react
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
+## Development of EOS icons React
+- Cloning the repo: 
+```
+git clone https://github.com/EOS-uiux-Solutions/eos-icons-react
+```
+
+- run for installing all the required dependencies.
+```
+npm install
+```
+
+### Package build command
+- run for producing the final build files.
+```
+npm run generate
+```
+
+### Testing
+Follow the above steps before running the test command. The test sequence requires the presence of the final build files in order to test them.
+
+- run to start the testing of the final build files using Jest.
+```
+npm run test
+```
+
 # Learn more about the EOS Design System
 
 - [EOS Design System](https://www.eosdesignsystem.com/)
