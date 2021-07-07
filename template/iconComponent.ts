@@ -8,7 +8,7 @@ import * as React from 'react';
 import { IconProps, valuesMap } from '../helper';
 import { flipFunction } from '../flipFunction';
 
-function Eos${fileName}({size = "m", color = "black", rotate = 0, horizontalFlip = false, verticalFlip = false}: IconProps) {
+function EOS_${fileName}({size = "m", color = "black", rotate = 0, horizontalFlip = false, verticalFlip = false}: IconProps) {
     const sizeString: string = size.toString()
     if(Object.keys(valuesMap).includes(sizeString)) {
         size = valuesMap[size]
@@ -19,7 +19,7 @@ return (
     );
 };
 
-export default Eos${fileName};
+export default EOS_${fileName};
 `
   return (render)
 }

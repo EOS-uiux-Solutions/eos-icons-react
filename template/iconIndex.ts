@@ -3,7 +3,7 @@ interface TemplateProps {
 }
 
 function iconIndexTemplate ({ fileName }:TemplateProps) {
-  const indexContent = `export { default as Eos${fileName} } from './${fileName}';
+  const indexContent = `export { default as EOS_${fileName} } from './${fileName}';
 `
   return (indexContent)
 }
