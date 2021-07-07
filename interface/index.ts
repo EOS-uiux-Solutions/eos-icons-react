@@ -12,3 +12,8 @@ export interface TemplateProps {
     fileName: string;
     data: string;
 }
+
+export interface NameProps {
+    iconName: string;
+    type: string;
+}
