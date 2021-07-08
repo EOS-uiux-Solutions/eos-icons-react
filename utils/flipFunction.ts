@@ -1,5 +1,6 @@
 import { FlipProps } from './helper'
 
+// Function for providing ScaleX, ScaleY, TranslateX and TranslateY based on prop to React SVG components
 export function flipFunction ({ horizontalFlip, verticalFlip }: FlipProps) {
   let translateX = 0
   let translateY = 0
