@@ -4,12 +4,12 @@ import * as fs from 'fs'
 import { IconGenerateScript } from '../interface/index'
 import componentTemplate from '../template/iconComponent'
 import iconIndexTemplate from '../template/iconIndex'
+import { nameFunction } from '../utils/nameFunction'
 
 async function generateIconComponents ({ type, from }: IconGenerateScript) {
   const iconNames = await fs.promises.readdir(from)
   for (const iconName of iconNames) {
-    const fileName = iconName.slice(0, iconName.length - 4).concat(type.charAt(0).toUpperCase() + type.slice(1))
-
+    const fileName = nameFunction({ iconName, type })
     // fetching Data of the required SVG file
     fs.readFile(path.resolve(__dirname, `../svg/${type}/${iconName}`), 'utf8', async function (err, data) {
       if (err) {
@@ -18,7 +18,7 @@ async function generateIconComponents ({ type, from }: IconGenerateScript) {
 
       if (type === 'animated') {
         data = data.replace('xml:space="preserve"', '')
-        if (fileName === 'installingAnimated') {
+        if (fileName === 'INSTALLING_ANIMATED') {
           while (data.includes('class="st0"')) {
             data = data.replace('class="st0"', 'className="st0"')
           }
