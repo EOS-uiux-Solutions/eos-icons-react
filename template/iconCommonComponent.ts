@@ -1,4 +1,5 @@
 import { CommonTemplateProps } from '../interface/index'
+import iconData from '../config/iconConfig.json'
 
 // Template for producing React component with prop selectable SVG version OUTLINE/FILLED
 function componentCommonTemplate ({ fileName, filled, outlined }:CommonTemplateProps) {
@@ -9,7 +10,7 @@ import * as React from 'react';
 import { IconCommonProps, valuesMap } from '../helper';
 import { flipFunction } from '../flipFunction';
 
-function EOS_${fileName}({size = "m", color = "black", rotate = 0, horizontalFlip = false, verticalFlip = false, theme = "outlined"}: IconCommonProps) {
+function EOS_${fileName}({size = "${iconData.iconDefault.size}", color = "${iconData.iconDefault.color}", rotate = ${iconData.iconDefault.rotate}, horizontalFlip = ${iconData.iconDefault.horizontalFlip}, verticalFlip = ${iconData.iconDefault.verticalFlip}, theme = "${iconData.iconDefault.theme}"}: IconCommonProps) {
     const sizeString: string = size.toString()
     if(Object.keys(valuesMap).includes(sizeString)) {
         size = valuesMap[size]
