@@ -5,6 +5,6 @@
         "rotate": 0,
         "horizontalFlip": false,
         "verticalFlip": false,
-        "theme": "outlined"   
+        "theme": "filled"   
     }
 }
