@@ -27,7 +27,7 @@ npm run test
 ```
 
 ## Build process
-![eosreactpng](https://user-images.githubusercontent.com/54861487/126060239-9094343b-d003-4d35-b0d9-46940de9592c.png)
+![Untitled-2021-07-18-1339](https://user-images.githubusercontent.com/54861487/126060393-13098cd1-e7aa-4fb7-8634-b15e3369f7ff.png)
 
 # Learn more about the EOS Design System
 
