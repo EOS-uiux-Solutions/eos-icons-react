@@ -26,6 +26,9 @@ Follow the above steps before running the test command. The test sequence requir
 npm run test
 ```
 
+## Build process
+![eosreactpng](https://user-images.githubusercontent.com/54861487/126060239-9094343b-d003-4d35-b0d9-46940de9592c.png)
+
 # Learn more about the EOS Design System
 
 - [EOS Design System](https://www.eosdesignsystem.com/)
