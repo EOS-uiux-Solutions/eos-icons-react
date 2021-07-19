@@ -23,3 +23,7 @@ export interface CommonTemplateProps {
     filled: string;
     outlined: string;
 }
+
+export interface StoryBookProps {
+    fileName: string;
+}

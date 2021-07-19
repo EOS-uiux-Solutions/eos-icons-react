@@ -1,5 +1,6 @@
 import generateIconComponents from './iconScript'
 import generateIconCommonComponents from './iconCommonScript'
+import generateStoryBookStories from './storyBookScript'
 
 // Script for generating FILLED theme React SVG components
 if (process.argv[2] === '--target=filled') {
@@ -30,5 +31,31 @@ if (process.argv[2] === '--target=common') {
   generateIconCommonComponents({
     type: 'common',
     from: 'svg/filled'
+  })
+}
+
+// Script for generating storybook stories
+if (process.argv[2] === '--target=storiesfilled') {
+  generateStoryBookStories({
+    type: 'filled',
+    from: 'svg/filled'
+  })
+}
+
+if (process.argv[2] === '--target=storiescommon') {
+  generateStoryBookStories({
+    type: 'common',
+    from: 'svg/filled'
+  })
+}
+
+if (process.argv[2] === '--target=stories') {
+  generateStoryBookStories({
+    type: 'animated',
+    from: 'svg/animated'
+  })
+  generateStoryBookStories({
+    type: 'outlined',
+    from: 'svg/outlined'
   })
 }
