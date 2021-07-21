@@ -9,9 +9,6 @@ updates:
       - "EOS-uiux-Solutions/mentors"
     allow:
       - dependency-name: "eos-icons"
-    commit-message:
-      prefix: "fix"
-      include: "scope"
     labels:
       - "npm"
       - "dependencies"
