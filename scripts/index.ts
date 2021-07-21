@@ -35,27 +35,13 @@ if (process.argv[2] === '--target=common') {
 }
 
 // Script for generating storybook stories
-if (process.argv[2] === '--target=storiesfilled') {
-  generateStoryBookStories({
-    type: 'filled',
-    from: 'svg/filled'
-  })
-}
-
-if (process.argv[2] === '--target=storiescommon') {
+if (process.argv[2] === '--target=stories') {
   generateStoryBookStories({
     type: 'common',
     from: 'svg/filled'
   })
-}
-
-if (process.argv[2] === '--target=stories') {
   generateStoryBookStories({
     type: 'animated',
     from: 'svg/animated'
-  })
-  generateStoryBookStories({
-    type: 'outlined',
-    from: 'svg/outlined'
   })
 }

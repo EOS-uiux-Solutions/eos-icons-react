@@ -11,8 +11,6 @@
     "script:animated": "TS_NODE_PROJECT=scripts/tsconfig.json node -r ts-node/register scripts/index.ts --target=animated",
     "script:common": "TS_NODE_PROJECT=scripts/tsconfig.json node -r ts-node/register scripts/index.ts --target=common",
     "script:stories": "TS_NODE_PROJECT=scripts/tsconfig.json node -r ts-node/register scripts/index.ts --target=stories",
-    "script:storiesfilled": "TS_NODE_PROJECT=scripts/tsconfig.json node -r ts-node/register scripts/index.ts --target=storiesfilled",
-    "script:storiescommon": "TS_NODE_PROJECT=scripts/tsconfig.json node -r ts-node/register scripts/index.ts --target=storiescommon",
     "icon": "mkdir -p src/icon && npm run script:filled && npm run script:animated && npm run script:outlined && npm run script:common",
     "build:es": "tsc --project tsconfig.build.json --module esnext --outDir es",
     "build:lib": "tsc --project tsconfig.build.json --module commonjs --outDir lib",
@@ -20,7 +18,7 @@
     "generate": "npm run fetch && npm run icon && npm run build",
     "test": "jest --env=jsdom",
     "storybook:start": "start-storybook -p 6006",
-    "storybook": "mkdir -p storybook/stories && npm run script:stories && npm run script:storiesfilled && npm run script:storiescommon && npm run storybook:start",
+    "storybook": "mkdir -p storybook/stories && npm run script:stories && npm run storybook:start",
     "build-storybook": "build-storybook"
   },
   "repository": {
