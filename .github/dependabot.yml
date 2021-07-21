@@ -12,5 +12,3 @@ update_configs:
     commit_message:
       prefix: "fix"
       include_scope: true
-      - match:
-          dependency_name: "eos-icons"
