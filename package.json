@@ -19,7 +19,7 @@
     "test": "jest --env=jsdom",
     "storybook:start": "start-storybook -p 6006",
     "storybook": "mkdir -p storybook/stories && npm run script:stories && npm run storybook:start",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -o docs-build"
   },
   "repository": {
     "type": "git",
