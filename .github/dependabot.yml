@@ -1,8 +1,17 @@
-version: 1
-update_configs:
-  - package_manager: "javascript"
+version: 2
+updates:
+  - package-ecosystem: "npm"
     directory: "/"
-    update_schedule: "live"
+    schedule:
+      interval: "daily"
     reviewers:
       - "vinayaksh42"
       - "EOS-uiux-Solutions/mentors"
+    allow:
+      - dependency-name: "eos-icons"
+    commit-message:
+      prefix: "fix"
+      include: "scope"
+    labels:
+      - "npm"
+      - "dependencies"
