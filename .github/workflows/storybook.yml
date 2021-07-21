@@ -6,7 +6,6 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@main
-        uses: actions/setup-node@v1
         with:
           persist-credentials: false
       - name: Install and Build 🔧
