@@ -1,0 +1,10 @@
+{
+    "iconDefault": {
+        "size": "m",
+        "color": "black",
+        "rotate": 0,
+        "horizontalFlip": false,
+        "verticalFlip": false,
+        "theme": "filled"   
+    }
+}

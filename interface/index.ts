@@ -17,3 +17,9 @@ export interface NameProps {
     iconName: string;
     type: string;
 }
+
+export interface CommonTemplateProps {
+    fileName: string;
+    filled: string;
+    outlined: string;
+}
