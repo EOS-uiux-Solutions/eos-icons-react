@@ -18,7 +18,7 @@
     "generate": "npm run fetch && npm run icon && npm run build",
     "test": "jest --env=jsdom",
     "storybook:start": "start-storybook -p 6006",
-    "storybook": "mkdir -p storybook/stories && npm run script:stories && npm run storybook:start",
+    "storybook": "mkdir -p storybook/stories && npm run script:stories",
     "build-storybook": "build-storybook -o docs-build"
   },
   "repository": {
