@@ -6,9 +6,3 @@ update_configs:
     reviewers:
       - "vinayaksh42"
       - "EOS-uiux-Solutions/mentors"
-    allowed_updates:
-      - match:
-          dependency_name: "eos-icons"
-    commit_message:
-      prefix: "fix"
-      include_scope: true
