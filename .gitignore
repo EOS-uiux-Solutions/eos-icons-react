@@ -9,5 +9,6 @@ lib
 svg
 tests
 storybook
+storybook-static
 
 yarn.lock
