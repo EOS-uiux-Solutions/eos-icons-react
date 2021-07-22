@@ -1,5 +1,7 @@
 name: Build and Deploy
-on: [push]
+on:
+  push:
+    branches: [ main ]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -11,7 +13,8 @@ jobs:
       - name: Install and Build 🔧
         run: | 
           npm install
-          npm run generate
+          npm run fetch
+          npm run icon
           npm run storybook
           npm run build-storybook
       - name: Deploy 🚀
