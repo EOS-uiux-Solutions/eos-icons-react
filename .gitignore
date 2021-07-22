@@ -8,7 +8,7 @@ es
 lib
 svg
 tests
-
+storybook
+storybook-static
 
 yarn.lock
-package-lock.json

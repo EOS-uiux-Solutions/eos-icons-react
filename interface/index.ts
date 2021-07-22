@@ -23,3 +23,9 @@ export interface CommonTemplateProps {
     filled: string;
     outlined: string;
 }
+
+export interface StoryBookProps {
+    fileName: string;
+    outlined: string;
+    filled: string;
+}
