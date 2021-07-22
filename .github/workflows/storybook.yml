@@ -13,8 +13,7 @@ jobs:
       - name: Install and Build 🔧
         run: | 
           npm install
-          npm run fetch
-          npm run icon
+          npm run generate
           npm run storybook
           npm run build-storybook
       - name: Deploy 🚀
