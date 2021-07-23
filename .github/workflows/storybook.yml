@@ -1,10 +1,10 @@
 name: Build and Deploy
-on: 
- push:
-    paths: ["scripts/**", "template/**"]
+on: [push]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    env:
+     NODE_OPTIONS: '--max_old_space_size=4096'
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@main
