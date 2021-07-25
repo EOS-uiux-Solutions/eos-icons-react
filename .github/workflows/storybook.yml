@@ -26,7 +26,8 @@ jobs:
 
       - name: Build 🔧
         run: | 
-          npm run generate
+          npm run fetch
+          npm run icon
           npm run storybook
           npm run build-storybook
 
