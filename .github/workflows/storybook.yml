@@ -1,7 +1,7 @@
 name: Build and Deploy
-on:
+on: 
   push:
-    branches: [ main ]
+    paths: ["scripts/**", "template/**", "gulpfile.ts"]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
