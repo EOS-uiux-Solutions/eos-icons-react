@@ -9,6 +9,4 @@ updates:
       - "EOS-uiux-Solutions/mentors"
     allow:
       - dependency-name: "eos-icons"
-    labels:
-      - "npm"
-      - "dependencies"
+    versioning-strategy: increase
