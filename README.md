@@ -54,7 +54,8 @@ import { EOS_LOADING_ANIMATED } from 'eos-icons-react';
 | verticalFlip | boolean | false | Flips icon vertically |
 | theme | string | 'filled' | sets icon theme (only available for common components)** |
 
-> * Size can be provided using either string or number. Pre-Defined size list
+> (*) Size can be provided using either string or number. Pre-Defined size list
+
 | Size Name | Size Value |
 |:-----|:-----|
 | xs | 4 |
@@ -66,7 +67,7 @@ import { EOS_LOADING_ANIMATED } from 'eos-icons-react';
 | xxl | 48 |
 | xxxl | 64 |
 
-> ** The theme prop is only available for common icon component. Eos-Icons React has 4 different types of icon components (common / filled / outlined / animated). The common icon component contains both filled and outlined version of the icon. For switching between the two types of version you can either supply 'outlined' or 'filled' to the theme prop. 
+> (**) The theme prop is only available for common icon component. Eos-Icons React has 4 different types of icon components (common / filled / outlined / animated). The common icon component contains both filled and outlined version of the icon. For switching between the two types of version you can either supply 'outlined' or 'filled' to the theme prop. 
 
 ## Development of EOS icons React
 - Cloning the repo: 
