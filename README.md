@@ -4,7 +4,7 @@
 ## Using eos-icons-react in your projects
 Refer to [EOS Icons](eos-icons.com) for more details about all the icons that are supported by EOS-Icons React
 
-[Storybook EOS-Icons React](https://eos-uiux-solutions.github.io/eos-icons-react/), checkout storybook for an in-depth look at the various different icons that are provided by EOS-Icons React as well the props available for configuring icons.
+[Storybook EOS-Icons React](https://storybook.eos-icons.com/), checkout storybook for an in-depth look at the various different icons that are provided by EOS-Icons React as well the props available for configuring icons.
 
 ### Installation
 ```
