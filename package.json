@@ -51,7 +51,7 @@
     "babel-jest": "^27.0.5",
     "babel-loader": "^8.2.2",
     "del": "^6.0.0",
-    "eos-icons": "^5.1.0",
+    "eos-icons": "^5.2.0",
     "eslint": "^7.29.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.23.4",
