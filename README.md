@@ -2,7 +2,7 @@
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 ## Using eos-icons-react in your projects
-Refer to [EOS Icons](eos-icons.com) for more details about all the icons that are supported by EOS-Icons React
+Refer to [EOS Icons](https://eos-icons.com/) for more details about all the icons that are supported by EOS-Icons React
 
 [Storybook EOS-Icons React](https://storybook.eos-icons.com/), checkout storybook for an in-depth look at the various different icons that are provided by EOS-Icons React as well the props available for configuring icons.
 
@@ -23,9 +23,9 @@ import { EOS_STAR } from 'eos-icons-react';
 ```
 #### Filled/Outlined icons usage
 ```
-import { EOS_STAR_FILED, EOS_STAR_OUTLINED } from 'eos-icons-react';
+import { EOS_STAR_FILLED, EOS_STAR_OUTLINED } from 'eos-icons-react';
 
-<EOS_STAR_FILED />
+<EOS_STAR_FILLED />
 <EOS_STAR_OUTLINED />
 ```
 #### Animated icons usage
@@ -101,7 +101,7 @@ npm run test
 
 - [EOS Design System](https://www.eosdesignsystem.com/)
 
-- [EOS Icons](eos-icons.com)
+- [EOS Icons](https://eos-icons.com/)
 
 - [Follow us on Twitter](https://twitter.com/eosdesignsystem)
 
