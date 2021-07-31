@@ -73,6 +73,15 @@
     "react": "^17.0.2"
   },
   "release": {
+    "plugins": [
+      ["@semantic-release/commit-analyzer", {
+        "preset": "eslint",
+        "releaseRules": [
+          {"tag": "New", "release": "minor"}
+        ]
+      }],
+      "@semantic-release/release-notes-generator"
+    ],
     "branches": [
       "main"
     ]
