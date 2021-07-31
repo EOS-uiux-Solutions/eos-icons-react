@@ -51,6 +51,7 @@
     "@typescript-eslint/parser": "^4.28.0",
     "babel-jest": "^27.0.5",
     "babel-loader": "^8.2.2",
+    "conventional-changelog-eslint": "^3.0.9",
     "del": "^6.0.0",
     "eos-icons": "^5.2.0",
     "eslint": "^7.29.0",
@@ -74,12 +75,18 @@
   },
   "release": {
     "plugins": [
-      ["@semantic-release/commit-analyzer", {
-        "preset": "eslint",
-        "releaseRules": [
-          {"tag": "New", "release": "minor"}
-        ]
-      }]
+      [
+        "@semantic-release/commit-analyzer",
+        {
+          "preset": "eslint",
+          "releaseRules": [
+            {
+              "tag": "New",
+              "release": "minor"
+            }
+          ]
+        }
+      ]
     ],
     "branches": [
       "main"
