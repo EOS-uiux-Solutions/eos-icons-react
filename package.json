@@ -79,8 +79,7 @@
         "releaseRules": [
           {"tag": "New", "release": "minor"}
         ]
-      }],
-      "@semantic-release/release-notes-generator"
+      }]
     ],
     "branches": [
       "main"
