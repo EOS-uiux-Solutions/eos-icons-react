@@ -9,13 +9,15 @@ function componentCommonTemplate ({ fileName, filled, outlined }:CommonTemplateP
 import * as React from 'react';
 import { IconCommonProps, valuesMap } from '../helper';
 import { flipFunction } from '../flipFunction';
+import classNames from 'classnames';
 
-function EOS_${fileName}({size = "${iconData.iconDefault.size}", color = "${iconData.iconDefault.color}", rotate = ${iconData.iconDefault.rotate}, horizontalFlip = ${iconData.iconDefault.horizontalFlip}, verticalFlip = ${iconData.iconDefault.verticalFlip}, theme = "${iconData.iconDefault.theme}"}: IconCommonProps) {
+function EOS_${fileName}({size = "${iconData.iconDefault.size}", color = "${iconData.iconDefault.color}", rotate = ${iconData.iconDefault.rotate}, horizontalFlip = ${iconData.iconDefault.horizontalFlip}, verticalFlip = ${iconData.iconDefault.verticalFlip}, theme = "${iconData.iconDefault.theme}", className}: IconCommonProps) {
     const sizeString: string = size.toString()
     if(Object.keys(valuesMap).includes(sizeString)) {
         size = valuesMap[size]
     }
     const { scaleX, scaleY, translateX, translateY } = flipFunction({horizontalFlip,verticalFlip})
+    const classString = classNames(className);
 return (
     <>
     {

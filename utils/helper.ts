@@ -4,7 +4,8 @@ export interface IconProps {
     color?: string,
     rotate?: string | number,
     horizontalFlip?: boolean,
-    verticalFlip?: boolean
+    verticalFlip?: boolean,
+    className?: string
 }
 
 // Interface for Common React SVG components
@@ -14,7 +15,8 @@ export interface IconCommonProps {
   rotate?: string | number,
   horizontalFlip?: boolean,
   verticalFlip?: boolean,
-  theme?: string
+  theme?: string,
+  className?: string
 }
 
 export interface ValueMap {

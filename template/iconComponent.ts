@@ -8,13 +8,15 @@ function componentTemplate ({ fileName, data }:TemplateProps) {
 import * as React from 'react';
 import { IconProps, valuesMap } from '../helper';
 import { flipFunction } from '../flipFunction';
+import classNames from 'classnames';
 
-function EOS_${fileName}({size = "${iconData.iconDefault.size}", color = "${iconData.iconDefault.color}", rotate = ${iconData.iconDefault.rotate}, horizontalFlip = ${iconData.iconDefault.horizontalFlip}, verticalFlip = ${iconData.iconDefault.verticalFlip}}: IconProps) {
+function EOS_${fileName}({size = "${iconData.iconDefault.size}", color = "${iconData.iconDefault.color}", rotate = ${iconData.iconDefault.rotate}, horizontalFlip = ${iconData.iconDefault.horizontalFlip}, verticalFlip = ${iconData.iconDefault.verticalFlip}, className}: IconProps) {
     const sizeString: string = size.toString()
     if(Object.keys(valuesMap).includes(sizeString)) {
         size = valuesMap[size]
     }
     const { scaleX, scaleY, translateX, translateY } = flipFunction({horizontalFlip,verticalFlip})
+    const classString = classNames(className);
 return (
     ${data}
     );

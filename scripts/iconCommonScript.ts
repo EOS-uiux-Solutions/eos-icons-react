@@ -30,7 +30,7 @@ async function generateIconCommonComponents ({ type, from }: IconGenerateScript)
         }
 
         // eslint-disable-next-line no-template-curly-in-string
-        const propString = 'svg data-testid="eos-svg-component" transform={`rotate(${rotate}) translate(${translateX}, ${translateY}) scale(${scaleX}, ${scaleY})`} fill={color} width={size} height={size}'
+        const propString = 'svg className={classString} data-testid="eos-svg-component" transform={`rotate(${rotate}) translate(${translateX}, ${translateY}) scale(${scaleX}, ${scaleY})`} fill={color} width={size} height={size}'
         filled = filled.replace('svg', propString)
         outlined = outlined.replace('svg', propString)
 
