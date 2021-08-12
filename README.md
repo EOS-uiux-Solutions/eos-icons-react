@@ -43,7 +43,7 @@ import { EOS_LOADING_ANIMATED } from 'eos-icons-react';
 import { EOS_LOADING_ANIMATED } from 'eos-icons-react';
 
 # The below icons will have the color #FF5733, size xxl and a rotation of 45 degree
-<EOS_LOADING_ANIMATED color="#FF5733" size="xxl" rotate={45}/>
+<EOS_LOADING_ANIMATED color="#FF5733" size="xxl" rotate={45} className="icon"/>
 ```
 
 #### Prop Details
@@ -55,6 +55,7 @@ import { EOS_LOADING_ANIMATED } from 'eos-icons-react';
 | horizontalFlip | boolean | false | Flips icon horizontally |
 | verticalFlip | boolean | false | Flips icon vertically |
 | theme | string | 'filled' | sets icon theme (only available for common components)** |
+| className | string | '' | sets custom styling class for icon component |
 
 > (*) Size can be provided using either string or number. Pre-Defined size list
 
