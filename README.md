@@ -100,15 +100,15 @@ npm run test
 ### Build process
 ![Untitled-2021-07-18-1339](https://user-images.githubusercontent.com/54861487/126060393-13098cd1-e7aa-4fb7-8634-b15e3369f7ff.png)
 
-# Learn more about the EOS Design System
+## Learn more about the EOS UX/UI Solutions
 
-- [EOS Design System](https://www.eosdesignsystem.com/)
+- [EOS Icons](https://eos-icons.com)
 
-- [EOS Icons](https://eos-icons.com/)
+- [EOS User Story](https://userstory.site)
 
-- [Follow us on Twitter](https://twitter.com/eosdesignsystem)
+- [Follow us on Twitter](https://twitter.com/eos_uxui)
 
-- [Join us in Slack](https://slack.eosdesignsystem.com)
+- [Join us on Slack](https://slack.userstory.site)
 
 # Our "thank you" section
 
