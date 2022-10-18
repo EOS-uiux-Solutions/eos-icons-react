@@ -1,6 +1,6 @@
 {
   "name": "eos-icons-react",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "Eos-Icons React npm package",
   "main": "./lib/index.js",
   "module": "./es/index.js",
