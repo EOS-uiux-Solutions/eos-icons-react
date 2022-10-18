@@ -100,6 +100,11 @@ npm run test
 ### Build process
 ![Untitled-2021-07-18-1339](https://user-images.githubusercontent.com/54861487/126060393-13098cd1-e7aa-4fb7-8634-b15e3369f7ff.png)
 
+### Release process
+
+We use semantic release to name our commits in order to trigger the correct version bump.
+For more information on semantic release and the keywords used go to our [wiki](https://github.com/EOS-uiux-Solutions/wiki/blob/main/Semantic-Releases.md)
+
 ## Learn more about the EOS UX/UI Solutions
 
 - [EOS Icons](https://eos-icons.com)
